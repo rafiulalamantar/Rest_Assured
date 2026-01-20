@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Create basic post request using rest Assured syntax">
-      <change afterPath="$PROJECT_DIR$/src/test/java/files/payload.java" afterDir="false" />
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Parsing the Json Response body using JsonPath class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basics.java" afterDir="false" />
     </list>
@@ -110,13 +109,22 @@
       <option name="project" value="LOCAL" />
       <updated>1768925461569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Assertions on Json Response body using JsonPath through Automated code">
+      <created>1768926735730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768926735730</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Rest Assured Project" />
     <MESSAGE value="Create Basics class" />
     <MESSAGE value="Create basic post request using rest Assured syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create basic post request using rest Assured syntax" />
+    <MESSAGE value="Assertions on Json Response body using JsonPath through Automated code" />
+    <MESSAGE value="Parsing the Json Response body using JsonPath class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing the Json Response body using JsonPath class" />
   </component>
 </project>
