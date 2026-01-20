@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Create Basics class">
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Create basic post request using rest Assured syntax">
+      <change afterPath="$PROJECT_DIR$/src/test/java/files/payload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basics.java" afterDir="false" />
     </list>
@@ -43,6 +44,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -97,12 +103,20 @@
       <option name="project" value="LOCAL" />
       <updated>1768925133888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create basic post request using rest Assured syntax">
+      <created>1768925461569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768925461569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Rest Assured Project" />
     <MESSAGE value="Create Basics class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Basics class" />
+    <MESSAGE value="Create basic post request using rest Assured syntax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create basic post request using rest Assured syntax" />
   </component>
 </project>
