@@ -24,11 +24,13 @@ public class Basics {
         String placeId = jsonPath.getString("place_id");
         System.out.println(placeId);
 
+        String newAddress = "70 winter walk, USA";
+
         given()
                 .log().all()
                 .queryParam("key", "qaclick123")
                 .header("Content-Type", "application/json")
-                .body("{ \"place_id\":\"" + placeId + "\", \"address\":\"70 winter walk, USA\", \"key\":\"qaclick123\" }")
+                .body("{ \"place_id\":\"" + placeId + "\", \"address\":\"" + newAddress + "\", \"key\":\"qaclick123\" }")
                 .when()
                 .put("maps/api/place/update/json")
                 .then()
@@ -36,6 +38,20 @@ public class Basics {
                 .log().all()
                 .statusCode(200)
                 .body("msg", equalTo("Address successfully updated"));
+
+
+
+        String getPlaceResponse = given()
+                .log().all().queryParam("key","qaclick123")
+                .queryParam("place_id",placeId)
+                .when().get("maps/api/place/get/json")
+                .then().assertThat().statusCode(200)
+                .extract().response().asString();
+
+        JsonPath jsonPath1 = new JsonPath(getPlaceResponse);
+        String actualAddress = jsonPath1.getString("address");
+        System.out.println(actualAddress);
+
 
 
     }
