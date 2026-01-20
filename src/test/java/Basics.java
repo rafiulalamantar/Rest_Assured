@@ -1,8 +1,10 @@
+import files.ReUsableMethods;
 import files.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.openqa.selenium.json.Json;
+import org.testng.Assert;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -48,9 +50,10 @@ public class Basics {
                 .then().assertThat().statusCode(200)
                 .extract().response().asString();
 
-        JsonPath jsonPath1 = new JsonPath(getPlaceResponse);
+        JsonPath jsonPath1 = ReUsableMethods.rawToJson(getPlaceResponse);
         String actualAddress = jsonPath1.getString("address");
         System.out.println(actualAddress);
+        Assert.assertEquals(actualAddress,newAddress);
 
 
 

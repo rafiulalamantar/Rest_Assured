@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="integrating the Multiple API's with common Json response value">
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Building End to End Automation using GET,POST and PUT Http Methods">
+      <change afterPath="$PROJECT_DIR$/src/test/java/files/ReUsableMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basics.java" afterDir="false" />
     </list>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768929037677</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Building End to End Automation using GET,POST and PUT Http Methods">
+      <created>1768929779413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768929779413</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +141,7 @@
     <MESSAGE value="Assertions on Json Response body using JsonPath through Automated code" />
     <MESSAGE value="Parsing the Json Response body using JsonPath class" />
     <MESSAGE value="integrating the Multiple API's with common Json response value" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrating the Multiple API's with common Json response value" />
+    <MESSAGE value="Building End to End Automation using GET,POST and PUT Http Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building End to End Automation using GET,POST and PUT Http Methods" />
   </component>
 </project>
