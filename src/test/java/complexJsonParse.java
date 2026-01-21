@@ -8,5 +8,12 @@ public class complexJsonParse {
         JsonPath jsonPath = new JsonPath(payload.coursePrice());
         int count = jsonPath.getInt("courses.size()");
         System.out.println(count);
+
+        //print purchase amount
+        int totalAmount = jsonPath.getInt("dashboard.purchaseAmount");
+        System.out.println(totalAmount);
+
+        String titleFirstCourse = jsonPath.get("courses[0].title");
+        System.out.println(titleFirstCourse);
     }
 }
