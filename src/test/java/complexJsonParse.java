@@ -22,6 +22,15 @@ public class complexJsonParse {
             System.out.println(jsonPath.get("courses["+i+"].price").toString());
             System.out.println(courseTitle);
         }
+        //print number of copies sold by any subjects
+        for (int i=0; i<count; i++){
+            String  courseTitle = jsonPath.get("courses["+i+"].title");
+            if(courseTitle.equalsIgnoreCase("RPA")){
+                int copies = jsonPath.get("courses["+i+"].copies");
+                System.out.println(copies);
+                break;
+            }
+        }
 
     }
 }

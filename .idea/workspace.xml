@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Retrieving the Json Array size and its elements using JsonPath">
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Iterating over every element of Json Array and accessing elements in it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/complexJsonParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/complexJsonParse.java" afterDir="false" />
     </list>
@@ -160,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769010748785</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Iterating over every element of Json Array and accessing elements in it">
+      <created>1769011340725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769011340725</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,6 +183,7 @@
     <MESSAGE value="understanding structure of complex nested json and its array notations" />
     <MESSAGE value="print no of courses returned by API" />
     <MESSAGE value="Retrieving the Json Array size and its elements using JsonPath" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieving the Json Array size and its elements using JsonPath" />
+    <MESSAGE value="Iterating over every element of Json Array and accessing elements in it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterating over every element of Json Array and accessing elements in it" />
   </component>
 </project>
