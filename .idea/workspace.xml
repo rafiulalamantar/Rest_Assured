@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="print no of courses returned by API">
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Retrieving the Json Array size and its elements using JsonPath">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/complexJsonParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/complexJsonParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769010312782</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Retrieving the Json Array size and its elements using JsonPath">
+      <created>1769010748785</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769010748785</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,6 +175,7 @@
     <MESSAGE value="Building End to End Automation using GET,POST and PUT Http Methods" />
     <MESSAGE value="understanding structure of complex nested json and its array notations" />
     <MESSAGE value="print no of courses returned by API" />
-    <option name="LAST_COMMIT_MESSAGE" value="print no of courses returned by API" />
+    <MESSAGE value="Retrieving the Json Array size and its elements using JsonPath" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retrieving the Json Array size and its elements using JsonPath" />
   </component>
 </project>
