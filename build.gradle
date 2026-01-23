@@ -13,12 +13,6 @@ dependencies {
     // =======================
     // Test Frameworks
     // =======================
-
-    // JUnit 5 (Jupiter)
-    testImplementation platform('org.junit:junit-bom:5.10.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-
     // TestNG
     testImplementation 'org.testng:testng:7.9.0'
 
@@ -59,6 +53,5 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
     useTestNG()
 }

@@ -47,4 +47,13 @@ public class payload {
                 "  ]\n" +
                 "}";
     }
+    public static String addBook(){
+        String payload = "{\n" +
+                "    \"name\": \"Learn Appium with Java\",\n" +
+                "    \"isbn\": \"bczmde\",\n" +
+                "    \"aisle\": \"2529857\",\n" +
+                "    \"author\": \"Rafiul Alam Antar\"\n" +
+                "}";
+        return payload;
+    }
 }
