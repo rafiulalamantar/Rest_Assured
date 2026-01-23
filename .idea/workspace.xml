@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Real time example to solve business logic through Json Response">
-      <change afterPath="$PROJECT_DIR$/src/test/java/files/dynamicJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Rest Assured Test for Library API Add Book http method">
+      <change beforePath="$PROJECT_DIR$/src/test/java/files/dynamicJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/files/dynamicJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/files/payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/files/payload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769011843833</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rest Assured Test for Library API Add Book http method">
+      <created>1769149798928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769149798928</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,6 +276,7 @@
     <MESSAGE value="Retrieving the Json Array size and its elements using JsonPath" />
     <MESSAGE value="Iterating over every element of Json Array and accessing elements in it" />
     <MESSAGE value="Retrieving Json Nodes on condition logic using JsonPath" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieving Json Nodes on condition logic using JsonPath" />
+    <MESSAGE value="Rest Assured Test for Library API Add Book http method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest Assured Test for Library API Add Book http method" />
   </component>
 </project>
