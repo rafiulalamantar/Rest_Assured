@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Example on Parameterization of API Tests with multiple data sets">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BasicsJsonFileInclude.java" afterDir="false" />
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="addPlace.json file where from retrieve data">
+      <change afterPath="$PROJECT_DIR$/src/test/java/oAuthTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,9 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="38Wov9ATaMyVPSEY98hXnqRDNRo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,20 +74,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicsJsonFileInclude">
+  <component name="RunManager" selected="Gradle.oAuthTest.oAuthTestWithUrl">
     <configuration name="BasicsJsonFileInclude" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicsJsonFileInclude" />
-      <module name="Rest_Assured.test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="complexJsonParse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="complexJsonParse" />
       <module name="Rest_Assured.test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,6 +103,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;files.dynamicJson.addBook&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="oAuthTest.oAuthTestWithUrl" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;oAuthTest.oAuthTestWithUrl&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.oAuthTest.oAuthTestWithUrl" />
         <item itemvalue="Application.BasicsJsonFileInclude" />
         <item itemvalue="Gradle.dynamicJson.addBook" />
         <item itemvalue="Gradle.sumValidation.validatePurchaseAmountSum" />
         <item itemvalue="Gradle.sumValidation.sumValidation" />
-        <item itemvalue="Application.complexJsonParse" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +300,17 @@
     </task>
     <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
