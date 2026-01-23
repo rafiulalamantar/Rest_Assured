@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Retrieving Json Nodes on condition logic using JsonPath">
-      <change afterPath="$PROJECT_DIR$/src/test/java/sumValidation.java" afterDir="false" />
+    <list default="true" id="da1aa23b-1e0f-49db-b968-48b5c87fe8b5" name="Changes" comment="Example on Parameterization of API Tests with multiple data sets">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BasicsJsonFileInclude.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -54,6 +56,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="38Wov9ATaMyVPSEY98hXnqRDNRo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,9 +71,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.sumValidation.validatePurchaseAmountSum">
-    <configuration name="Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basics" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BasicsJsonFileInclude">
+    <configuration name="BasicsJsonFileInclude" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicsJsonFileInclude" />
       <module name="Rest_Assured.test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +90,29 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="dynamicJson.addBook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;files.dynamicJson.addBook&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="sumValidation.sumValidation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -129,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicsJsonFileInclude" />
+        <item itemvalue="Gradle.dynamicJson.addBook" />
         <item itemvalue="Gradle.sumValidation.validatePurchaseAmountSum" />
         <item itemvalue="Gradle.sumValidation.sumValidation" />
         <item itemvalue="Application.complexJsonParse" />
-        <item itemvalue="Application.Basics" />
-        <item itemvalue="Application.Basics" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +256,28 @@
       <option name="project" value="LOCAL" />
       <updated>1769011843833</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rest Assured Test for Library API Add Book http method">
+      <created>1769149798928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769149798928</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sending parameters to payload from test">
+      <created>1769150391944</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1769150391944</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Example on Parameterization of API Tests with multiple data sets">
+      <created>1769151398725</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1769151398725</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,6 +295,9 @@
     <MESSAGE value="Retrieving the Json Array size and its elements using JsonPath" />
     <MESSAGE value="Iterating over every element of Json Array and accessing elements in it" />
     <MESSAGE value="Retrieving Json Nodes on condition logic using JsonPath" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieving Json Nodes on condition logic using JsonPath" />
+    <MESSAGE value="Rest Assured Test for Library API Add Book http method" />
+    <MESSAGE value="sending parameters to payload from test" />
+    <MESSAGE value="Example on Parameterization of API Tests with multiple data sets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Example on Parameterization of API Tests with multiple data sets" />
   </component>
 </project>
