@@ -3,7 +3,8 @@ package pojo;
 public class Location {
 
     private double lat;
-    private double lan;
+    private double lng;   // ✅ must be lng
+
     public double getLat() {
         return lat;
     }
@@ -12,12 +13,12 @@ public class Location {
         this.lat = lat;
     }
 
-    public double getLan() {
-        return lan;
+    public double getLng() {
+        return lng;
     }
 
-    public void setLan(double lan) {
-        this.lan = lan;
+    public void setLng(double lng) {
+        this.lng = lng;
     }
 
 }
