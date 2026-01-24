@@ -9,7 +9,7 @@ import pojo.LoginResponse;
 import static io.restassured.RestAssured.*;
     public class EcommerceApiTest {
 
-        @Test(description = "erify that a user can login successfully via E-Commerce API using valid credentials and retrieve token and userId")
+        @Test(description = "Verify that a user can login successfully via E-Commerce API using valid credentials and retrieve token and userId")
         public void ecommerceApiTest(){
 
             RequestSpecification requestSpecification = new RequestSpecBuilder()
