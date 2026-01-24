@@ -13,7 +13,6 @@ import static io.restassured.RestAssured.*;
 public class Serialization {
     @Test(description = "Verify successful serialization of request data from Java object to JSON and validate the API response")
     public void addPlace() {
-        // ---------- Payload Preparation ----------
         AddPlace addPlace = new AddPlace();
         addPlace.setAccuracy(50);
         addPlace.setName("Rafiul Alam Antar");
