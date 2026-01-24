@@ -1,16 +1,23 @@
 import com.google.common.base.Verify;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 import pojo.LoginRequest;
 import pojo.LoginResponse;
 
+import java.io.File;
+
 import static io.restassured.RestAssured.*;
     public class EcommerceApiTest {
 
+        private String token;
+        private String userID;
+        private String productID;
+
         @Test(description = "Verify that a user can login successfully via E-Commerce API using valid credentials and retrieve token and userId")
-        public void ecommerceApiTest(){
+        public void verifyUserCanLoginSuccessfully(){
 
             RequestSpecification requestSpecification = new RequestSpecBuilder()
                     .setBaseUri("https://rahulshettyacademy.com")
@@ -26,7 +33,32 @@ import static io.restassured.RestAssured.*;
                     .when().post("/api/ecom/auth/login")
                     .then().log().all().extract().response().as(LoginResponse.class);
             System.out.println(loginResponse.getToken());
+            token = loginResponse.getToken();
+            userID = loginResponse.getUserId();
             System.out.println(loginResponse.getUserId());
 
         }
+        @Test(description = "Verify user can create product", dependsOnMethods = "verifyUserCanLoginSuccessfully")
+        public void verifyUserCanCreateProductSuccessfully(){
+            RequestSpecification requestSpecAddProduct = new RequestSpecBuilder()
+                    .setBaseUri("https://rahulshettyacademy.com")
+                    .addHeader("Authorization",token)
+                    .build();
+            RequestSpecification addingProduct = given().log().all().spec(requestSpecAddProduct)
+                    .param("productName","Laptop")
+                    .param("productAddedBy",userID)
+                    .param("productCategory","fashion")
+                    .param("productSubCategory","shirts")
+                    .param("productPrice","11500")
+                    .param("productDescription","Lenovo")
+                    .param("productFor","men")
+                    .multiPart("productImage",new File("/Users/rafiulalamantar/Documents/GitHub/Rest_Assured/computer.jpg"));
+
+            String responseAddProduct = addingProduct.when().post("/api/ecom/product/add-product")
+                    .then().log().all().extract().response().asString();
+            JsonPath jsonPath = new JsonPath(responseAddProduct);
+            productID = jsonPath.get("productId");
+
+        }
+
     }
