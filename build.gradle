@@ -52,6 +52,7 @@ dependencies {
     testImplementation 'org.hamcrest:hamcrest:2.2'
 
     testImplementation 'com.aventstack:extentreports:5.0.9'
+    testImplementation 'io.qameta.allure:allure-testng:2.21.0'
 
 
 }
@@ -59,5 +60,6 @@ dependencies {
 test {
     useTestNG(){
         suites 'src/test/resources/testng.xml'
+        systemProperty "allure.results.directory", "$buildDir/allure-results"
     }
 }
