@@ -50,8 +50,14 @@ dependencies {
 
     // Assertions
     testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    testImplementation 'com.aventstack:extentreports:5.0.9'
+
+
 }
 
 test {
-    useTestNG()
+    useTestNG(){
+        suites 'src/test/resources/testng.xml'
+    }
 }
