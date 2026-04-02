@@ -17,7 +17,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 
 public class SpecBuilder {
-    @Test(description = "Verify that the Add Place API request is built using RequestSpecBuilder with Java object serialization to JSON and the response is validated using ResponseSpecBuilder")
+    @Test(groups = {"regression","smoke"},invocationCount = 3,description = "Verify that the Add Place API request is built using RequestSpecBuilder with Java object serialization to JSON and the response is validated using ResponseSpecBuilder")
     public void addPlace() {
 
         // ---------- Payload Preparation ----------

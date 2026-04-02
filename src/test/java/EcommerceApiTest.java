@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.*;
         private String userID;
         private String productID;
 
-        @Test(description = "Verify that a user can login successfully via E-Commerce API using valid credentials and retrieve token and userId")
+        @Test(groups = {"regression"},description = "Verify that a user can login successfully via E-Commerce API using valid credentials and retrieve token and userId")
         public void verifyUserCanLoginSuccessfully(){
 
             RequestSpecification requestSpecification = new RequestSpecBuilder()
@@ -44,7 +44,7 @@ import static io.restassured.RestAssured.*;
             System.out.println(loginResponse.getUserId());
 
         }
-        @Test(description = "Verify user can create product", dependsOnMethods = "verifyUserCanLoginSuccessfully")
+        @Test(groups = {"regression"},description = "Verify user can create product", dependsOnMethods = "verifyUserCanLoginSuccessfully")
         public void verifyUserCanCreateProductSuccessfully(){
             RequestSpecification requestSpecAddProduct = new RequestSpecBuilder()
                     .setBaseUri("https://rahulshettyacademy.com")
@@ -67,7 +67,7 @@ import static io.restassured.RestAssured.*;
             productID = jsonPath.get("productId");
 
         }
-        @Test(description = "Verify that user can create order successfully",dependsOnMethods = "verifyUserCanCreateProductSuccessfully")
+        @Test(groups = {"regression"},description = "Verify that user can create order successfully",dependsOnMethods = "verifyUserCanCreateProductSuccessfully")
         public void verifyUserCanCreateOrder(){
             RequestSpecification requestSpecCreateOrder = new RequestSpecBuilder()
                     .setBaseUri("https://rahulshettyacademy.com")
@@ -89,7 +89,7 @@ import static io.restassured.RestAssured.*;
                     .then().log().all().extract().response().asString();
             System.out.println(responseAddOrder);
         }
-        @Test(description = "Verify that user delete product successfully",dependsOnMethods = "verifyUserCanCreateOrder")
+        @Test(groups = {"regression"},description = "Verify that user delete product successfully",dependsOnMethods = "verifyUserCanCreateOrder")
         public void userCanDeleteOrderSuccessfully(){
             RequestSpecification requestSpecDeleteOrder = new RequestSpecBuilder()
                     .setBaseUri("https://rahulshettyacademy.com")
